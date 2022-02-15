@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6595253327BBE25500D76D9C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595253227BBE25500D76D9C /* Tests_iOS.swift */; };
+		6595253527BBE25500D76D9C /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595253427BBE25500D76D9C /* Tests_iOSLaunchTests.swift */; };
+		6595253F27BBE25500D76D9C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595253E27BBE25500D76D9C /* Tests_macOS.swift */; };
+		6595254127BBE25500D76D9C /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595254027BBE25500D76D9C /* Tests_macOSLaunchTests.swift */; };
+		6595254227BBE25500D76D9C /* FlyingFoxSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595251A27BBE25200D76D9C /* FlyingFoxSandboxApp.swift */; };
+		6595254327BBE25500D76D9C /* FlyingFoxSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595251A27BBE25200D76D9C /* FlyingFoxSandboxApp.swift */; };
+		6595254427BBE25500D76D9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595251B27BBE25200D76D9C /* ContentView.swift */; };
+		6595254527BBE25500D76D9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595251B27BBE25200D76D9C /* ContentView.swift */; };
+		6595254627BBE25500D76D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595251C27BBE25400D76D9C /* Assets.xcassets */; };
+		6595254727BBE25500D76D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595251C27BBE25400D76D9C /* Assets.xcassets */; };
+		6595255D27BBE2D400D76D9C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595255C27BBE2D400D76D9C /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6595252F27BBE25500D76D9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6595251527BBE25200D76D9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6595252027BBE25400D76D9C;
+			remoteInfo = "FlyingFoxSandbox (iOS)";
+		};
+		6595253B27BBE25500D76D9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6595251527BBE25200D76D9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6595252627BBE25500D76D9C;
+			remoteInfo = "FlyingFoxSandbox (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6595255827BBE2D300D76D9C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6595251A27BBE25200D76D9C /* FlyingFoxSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingFoxSandboxApp.swift; sourceTree = "<group>"; };
+		6595251B27BBE25200D76D9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6595251C27BBE25400D76D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6595252127BBE25500D76D9C /* FlyingFoxSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingFoxSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6595252727BBE25500D76D9C /* FlyingFoxSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingFoxSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6595252927BBE25500D76D9C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		6595252E27BBE25500D76D9C /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6595253227BBE25500D76D9C /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		6595253427BBE25500D76D9C /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		6595253A27BBE25500D76D9C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6595253E27BBE25500D76D9C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		6595254027BBE25500D76D9C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		6595255A27BBE2D300D76D9C /* FlyingFoxSandboxCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FlyingFoxSandboxCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		6595255C27BBE2D400D76D9C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6595251E27BBE25400D76D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595252427BBE25500D76D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595252B27BBE25500D76D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595253727BBE25500D76D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595255727BBE2D300D76D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6595251427BBE25200D76D9C = {
+			isa = PBXGroup;
+			children = (
+				6595255B27BBE2D400D76D9C /* FlyingFoxSandboxCLI */,
+				6595251927BBE25200D76D9C /* Shared */,
+				6595252827BBE25500D76D9C /* macOS */,
+				6595253127BBE25500D76D9C /* Tests iOS */,
+				6595253D27BBE25500D76D9C /* Tests macOS */,
+				6595252227BBE25500D76D9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6595251927BBE25200D76D9C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6595251A27BBE25200D76D9C /* FlyingFoxSandboxApp.swift */,
+				6595251B27BBE25200D76D9C /* ContentView.swift */,
+				6595251C27BBE25400D76D9C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6595252227BBE25500D76D9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6595252127BBE25500D76D9C /* FlyingFoxSandbox.app */,
+				6595252727BBE25500D76D9C /* FlyingFoxSandbox.app */,
+				6595252E27BBE25500D76D9C /* Tests iOS.xctest */,
+				6595253A27BBE25500D76D9C /* Tests macOS.xctest */,
+				6595255A27BBE2D300D76D9C /* FlyingFoxSandboxCLI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6595252827BBE25500D76D9C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				6595252927BBE25500D76D9C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		6595253127BBE25500D76D9C /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6595253227BBE25500D76D9C /* Tests_iOS.swift */,
+				6595253427BBE25500D76D9C /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		6595253D27BBE25500D76D9C /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				6595253E27BBE25500D76D9C /* Tests_macOS.swift */,
+				6595254027BBE25500D76D9C /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		6595255B27BBE2D400D76D9C /* FlyingFoxSandboxCLI */ = {
+			isa = PBXGroup;
+			children = (
+				6595255C27BBE2D400D76D9C /* main.swift */,
+			);
+			path = FlyingFoxSandboxCLI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6595252027BBE25400D76D9C /* FlyingFoxSandbox (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6595254A27BBE25500D76D9C /* Build configuration list for PBXNativeTarget "FlyingFoxSandbox (iOS)" */;
+			buildPhases = (
+				6595251D27BBE25400D76D9C /* Sources */,
+				6595251E27BBE25400D76D9C /* Frameworks */,
+				6595251F27BBE25400D76D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlyingFoxSandbox (iOS)";
+			productName = "FlyingFoxSandbox (iOS)";
+			productReference = 6595252127BBE25500D76D9C /* FlyingFoxSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6595252627BBE25500D76D9C /* FlyingFoxSandbox (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6595254D27BBE25500D76D9C /* Build configuration list for PBXNativeTarget "FlyingFoxSandbox (macOS)" */;
+			buildPhases = (
+				6595252327BBE25500D76D9C /* Sources */,
+				6595252427BBE25500D76D9C /* Frameworks */,
+				6595252527BBE25500D76D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlyingFoxSandbox (macOS)";
+			productName = "FlyingFoxSandbox (macOS)";
+			productReference = 6595252727BBE25500D76D9C /* FlyingFoxSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6595252D27BBE25500D76D9C /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6595255027BBE25500D76D9C /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				6595252A27BBE25500D76D9C /* Sources */,
+				6595252B27BBE25500D76D9C /* Frameworks */,
+				6595252C27BBE25500D76D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6595253027BBE25500D76D9C /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 6595252E27BBE25500D76D9C /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6595253927BBE25500D76D9C /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6595255327BBE25500D76D9C /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				6595253627BBE25500D76D9C /* Sources */,
+				6595253727BBE25500D76D9C /* Frameworks */,
+				6595253827BBE25500D76D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6595253C27BBE25500D76D9C /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 6595253A27BBE25500D76D9C /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6595255927BBE2D300D76D9C /* FlyingFoxSandboxCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6595255E27BBE2D400D76D9C /* Build configuration list for PBXNativeTarget "FlyingFoxSandboxCLI" */;
+			buildPhases = (
+				6595255627BBE2D300D76D9C /* Sources */,
+				6595255727BBE2D300D76D9C /* Frameworks */,
+				6595255827BBE2D300D76D9C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyingFoxSandboxCLI;
+			productName = FlyingFoxSandboxCLI;
+			productReference = 6595255A27BBE2D300D76D9C /* FlyingFoxSandboxCLI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6595251527BBE25200D76D9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6595252027BBE25400D76D9C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6595252627BBE25500D76D9C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6595252D27BBE25500D76D9C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6595252027BBE25400D76D9C;
+					};
+					6595253927BBE25500D76D9C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6595252627BBE25500D76D9C;
+					};
+					6595255927BBE2D300D76D9C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6595251827BBE25200D76D9C /* Build configuration list for PBXProject "FlyingFoxSandbox" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6595251427BBE25200D76D9C;
+			productRefGroup = 6595252227BBE25500D76D9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6595252027BBE25400D76D9C /* FlyingFoxSandbox (iOS) */,
+				6595252627BBE25500D76D9C /* FlyingFoxSandbox (macOS) */,
+				6595252D27BBE25500D76D9C /* Tests iOS */,
+				6595253927BBE25500D76D9C /* Tests macOS */,
+				6595255927BBE2D300D76D9C /* FlyingFoxSandboxCLI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6595251F27BBE25400D76D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6595254627BBE25500D76D9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595252527BBE25500D76D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6595254727BBE25500D76D9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595252C27BBE25500D76D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595253827BBE25500D76D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6595251D27BBE25400D76D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6595254427BBE25500D76D9C /* ContentView.swift in Sources */,
+				6595254227BBE25500D76D9C /* FlyingFoxSandboxApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595252327BBE25500D76D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6595254527BBE25500D76D9C /* ContentView.swift in Sources */,
+				6595254327BBE25500D76D9C /* FlyingFoxSandboxApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595252A27BBE25500D76D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6595253527BBE25500D76D9C /* Tests_iOSLaunchTests.swift in Sources */,
+				6595253327BBE25500D76D9C /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595253627BBE25500D76D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6595254127BBE25500D76D9C /* Tests_macOSLaunchTests.swift in Sources */,
+				6595253F27BBE25500D76D9C /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6595255627BBE2D300D76D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6595255D27BBE2D400D76D9C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6595253027BBE25500D76D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6595252027BBE25400D76D9C /* FlyingFoxSandbox (iOS) */;
+			targetProxy = 6595252F27BBE25500D76D9C /* PBXContainerItemProxy */;
+		};
+		6595253C27BBE25500D76D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6595252627BBE25500D76D9C /* FlyingFoxSandbox (macOS) */;
+			targetProxy = 6595253B27BBE25500D76D9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6595254827BBE25500D76D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6595254927BBE25500D76D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6595254B27BBE25500D76D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrejacobs.FlyingFoxSandbox;
+				PRODUCT_NAME = FlyingFoxSandbox;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6595254C27BBE25500D76D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrejacobs.FlyingFoxSandbox;
+				PRODUCT_NAME = FlyingFoxSandbox;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6595254E27BBE25500D76D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrejacobs.FlyingFoxSandbox;
+				PRODUCT_NAME = FlyingFoxSandbox;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6595254F27BBE25500D76D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrejacobs.FlyingFoxSandbox;
+				PRODUCT_NAME = FlyingFoxSandbox;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6595255127BBE25500D76D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.andrejacobs.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlyingFoxSandbox (iOS)";
+			};
+			name = Debug;
+		};
+		6595255227BBE25500D76D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.andrejacobs.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlyingFoxSandbox (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6595255427BBE25500D76D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.andrejacobs.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FlyingFoxSandbox (macOS)";
+			};
+			name = Debug;
+		};
+		6595255527BBE25500D76D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.andrejacobs.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FlyingFoxSandbox (macOS)";
+			};
+			name = Release;
+		};
+		6595255F27BBE2D400D76D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6595256027BBE2D400D76D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W9PTSC7KF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6595251827BBE25200D76D9C /* Build configuration list for PBXProject "FlyingFoxSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6595254827BBE25500D76D9C /* Debug */,
+				6595254927BBE25500D76D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6595254A27BBE25500D76D9C /* Build configuration list for PBXNativeTarget "FlyingFoxSandbox (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6595254B27BBE25500D76D9C /* Debug */,
+				6595254C27BBE25500D76D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6595254D27BBE25500D76D9C /* Build configuration list for PBXNativeTarget "FlyingFoxSandbox (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6595254E27BBE25500D76D9C /* Debug */,
+				6595254F27BBE25500D76D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6595255027BBE25500D76D9C /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6595255127BBE25500D76D9C /* Debug */,
+				6595255227BBE25500D76D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6595255327BBE25500D76D9C /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6595255427BBE25500D76D9C /* Debug */,
+				6595255527BBE25500D76D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6595255E27BBE2D400D76D9C /* Build configuration list for PBXNativeTarget "FlyingFoxSandboxCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6595255F27BBE2D400D76D9C /* Debug */,
+				6595256027BBE2D400D76D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6595251527BBE25200D76D9C /* Project object */;
+}
