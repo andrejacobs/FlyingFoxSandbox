@@ -6,6 +6,12 @@
 //
 
 import Foundation
+import FlyingFox
 
-print("Hello, World!")
+let server = HTTPServer(port: 8080)
+let task = Task { try await server.start() }
+
+sleep(10)
+
+task.cancel()
 
