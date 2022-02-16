@@ -20,7 +20,7 @@
 		6595254527BBE25500D76D9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595251B27BBE25200D76D9C /* ContentView.swift */; };
 		6595254627BBE25500D76D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595251C27BBE25400D76D9C /* Assets.xcassets */; };
 		6595254727BBE25500D76D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595251C27BBE25400D76D9C /* Assets.xcassets */; };
-		6595255D27BBE2D400D76D9C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595255C27BBE2D400D76D9C /* main.swift */; };
+		6595255D27BBE2D400D76D9C /* start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595255C27BBE2D400D76D9C /* start.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 		6595253E27BBE25500D76D9C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		6595254027BBE25500D76D9C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		6595255A27BBE2D300D76D9C /* FlyingFoxSandboxCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FlyingFoxSandboxCLI; sourceTree = BUILT_PRODUCTS_DIR; };
-		6595255C27BBE2D400D76D9C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6595255C27BBE2D400D76D9C /* start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = start.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +184,7 @@
 		6595255B27BBE2D400D76D9C /* FlyingFoxSandboxCLI */ = {
 			isa = PBXGroup;
 			children = (
-				6595255C27BBE2D400D76D9C /* main.swift */,
+				6595255C27BBE2D400D76D9C /* start.swift */,
 			);
 			path = FlyingFoxSandboxCLI;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6595255D27BBE2D400D76D9C /* main.swift in Sources */,
+				6595255D27BBE2D400D76D9C /* start.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +753,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W9PTSC7KF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -766,6 +770,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W9PTSC7KF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
